@@ -1,0 +1,4 @@
+#!/bin/sh
+feh --bg-scale ~/Pictures/adventure-climb-conifer-640781.jpg
+
+killall -9 polybar; nohup polybar main &
