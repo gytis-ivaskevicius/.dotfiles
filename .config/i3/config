@@ -135,15 +135,6 @@ client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color  
 
 
-# Hide mouse
-#exec --no-startup-id unclutter -jitter 10 -idle 1
-# no mouse follow
-#focus_follows_mouse no
-# Compton
-# No VSYNC until GLX fix
-exec --no-startup-id compton --config ~/.scripts/compton.conf
-# There is a freeze drop issue with GLX
-# exec --no-startup-id compton --backend glx --vsync opengl-swc
 # Lockscreen
 #bindsym $mod+F2 exec ~/comfy_guration/scripts/i3lock.sh
 # Caps as Esc
