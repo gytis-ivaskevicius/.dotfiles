@@ -56,7 +56,7 @@ POWERLEVEL9K_STATUS_OK_FOREGROUND="grey100"
 POWERLEVEL9K_STATUS_ERROR_BACKGROUND="red"
 POWERLEVEL9K_STATUS_ERROR_FOREGROUND="grey100"
 
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+#source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
 
 #ENABLE_CORRECTION="true"

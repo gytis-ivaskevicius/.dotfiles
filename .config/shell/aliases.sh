@@ -1,5 +1,5 @@
-alias ls='ls --color=always'
-#alias grep='grep --color=always'
+alias grep='grep --color=auto'
+alias diff="diff --color=auto"
 
 alias svi='sudo nvim'
 alias vi='nvim'
@@ -50,7 +50,8 @@ alias ss='sudo "$(fc -s)"'
 #######################################################
 # NAVIGATION
 #######################################################
-alias l='ls -lhF --group-directories-first --time-style=long-iso'
+alias ls='ls -hN --color=auto --group-directories-first'
+alias l='ls -lF --time-style=long-iso'
 alias la='l -a'
 
 alias size='du -Sch | sort -n -r |more'
