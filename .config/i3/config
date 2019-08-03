@@ -156,10 +156,6 @@ exec --no-startup-id compton --config ~/.scripts/compton.conf
 
 exec_always --no-startup-id ulauncher --hide-window
 exec --no-startup-id nm-applet
-exec --no-startup-id autorandr -c; polybar main
-exec --no-startup-id sleep 1; feh --bg-scale ~/Pictures/adventure-climb-conifer-640781.jpg 
-# exec --no-startup-id ~/.screenlayout/multidisplay.sh 
-#exec --no-startup-id ~/.screenlayout/test.sh 
 
 bindsym $mod+b exec "firefox"
 bindsym $mod+g exec "google-chrome-stable"

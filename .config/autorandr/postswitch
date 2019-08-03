@@ -1,4 +1,10 @@
 #!/bin/sh
-feh --bg-scale ~/Pictures/adventure-climb-conifer-640781.jpg
 
-killall -9 polybar; nohup polybar main &
+# WALLPAPER
+feh --bg-scale $HOME/Pictures/wallpaper.png &
+
+# POLYBAR
+killall -9 polybar
+nohup polybar main >/dev/null 2>&1 &
+
+
