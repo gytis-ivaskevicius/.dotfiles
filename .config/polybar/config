@@ -46,8 +46,8 @@ border-color = #131313
 ; module-margin-left = 1
 ; module-margin-right = 2
 
-;font-0 = "3270Medium Nerd Font:style=Medium:size=10;2"
-font-0 = "PowerlineSymbols:style=Medium:size=10;2"
+font-0 = "3270Medium Nerd Font:style=Medium:size=10;2"
+;font-0 = "PowerlineSymbols:style=Medium:size=10;2"
 
 ;font-0 = Hack:pixelsize=10:weight=bold;2
 font-1 = Roboto:pixelsize=10;2
