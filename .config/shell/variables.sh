@@ -11,6 +11,8 @@ export LESS_TERMCAP_us=$'\e[1;4;34m'
 export EDITOR=nvim
 export VISUAL=nvim
 
+export PATH="$PATH:$HOME/.scripts"
+
 if command -v java > /dev/null; then
     export JAVA_HOME_BIN=`which java`
     export JAVA_HOME_DIR=`dirname $JAVA_HOME_BIN`

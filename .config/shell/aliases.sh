@@ -4,6 +4,8 @@ alias ls='ls --color=always'
 alias svi='sudo nvim'
 alias vi='nvim'
 
+alias config='/usr/bin/git --git-dir=$HOME/rootfs.git --work-tree=/'
+config config --local status.showUntrackedFiles no
 
 #######################################################
 # BASIC ALIAS
