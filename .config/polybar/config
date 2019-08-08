@@ -24,35 +24,18 @@ red = #ee3333
 
 [bar/main]
 width = 100%
-height = 14
+height = 16
 radius = 1.0
+padding-left = 5
 fixed-center = true
 
 background = ${colors.trans}
 foreground = ${colors.foreground}
 
-; line-size = 3
-; line-color = #fff
+font-0 = Roboto:pixelsize=9;2
+font-1 = "3270Medium Nerd Font:style=Medium:size=11;3"
 
-border-size = 2
-border-color = #131313
-
-; border-bottom-size = 2
-; border-bottom-color = #131313
-
-; padding-left = 0
-; padding-right = 2
-
-; module-margin-left = 1
-; module-margin-right = 2
-
-font-0 = "3270Medium Nerd Font:style=Medium:size=10;2"
-;font-0 = "PowerlineSymbols:style=Medium:size=10;2"
-
-;font-0 = Hack:pixelsize=10:weight=bold;2
-font-1 = Roboto:pixelsize=10;2
-
-modules-left = i3 arrow0 i3index arrow
+modules-left = arrow0 i3index arrow
 modules-center = music
 ; TODO: add "backlight"
 modules-right = arrow8 xkeyboard arrow7 memory arrow6 cpu arrow7 battery arrow6 volume arrow7 date arrow6
@@ -70,23 +53,20 @@ tray-padding = 8
 ; background to trans
 type = custom/text
 content = " "
-content-font = 2
-content-foreground = ${colors.pink}
+content-foreground = ${colors.background}
 content-background = ${colors.trans}
 
 [module/arrow0]
 ; background to trans
 type = custom/text
 content = " "
-content-font = 2
-content-foreground = ${colors.background}
-content-background = ${colors.pink}
+content-foreground = ${colors.trans}
+content-background = ${colors.background}
 
 [module/arrow1]
 ; grey to Blue
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.blue}
 content-background = ${colors.grey}
 
@@ -94,7 +74,6 @@ content-background = ${colors.grey}
 ; Blue to Purple
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.purple}
 content-background = ${colors.blue}
 
@@ -102,7 +81,6 @@ content-background = ${colors.blue}
 ; Purple to pink
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.pink}
 content-background = ${colors.purple}
 
@@ -110,7 +88,6 @@ content-background = ${colors.purple}
 ; pink to green
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.green}
 content-background = ${colors.pink}
 
@@ -118,7 +95,6 @@ content-background = ${colors.pink}
 ; green to grey
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.grey}
 content-background = ${colors.green}
 
@@ -126,7 +102,6 @@ content-background = ${colors.green}
 ; grey to bg
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.background}
 content-background = ${colors.grey}
 
@@ -134,7 +109,6 @@ content-background = ${colors.grey}
 ; bg to grey
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.grey}
 content-background = ${colors.background}
 
@@ -142,7 +116,6 @@ content-background = ${colors.background}
 ; grey to bg
 type = custom/text
 content = " "
-content-font = 2
 content-foreground = ${colors.background}
 content-background = ${colors.trans}
 
@@ -173,80 +146,33 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = " KEY "
-format-prefix-font = 1
 format-prefix-foreground = ${colors.blue}
 format-prefix-background = ${colors.background}
 
 label-layout = %layout%
-label-layout-font = 1
 label-layout-foreground = ${colors.blue}
 label-layout-background = ${colors.background}
-
-; label-indicator-padding = 2
-; label-indicator-margin = 1
-; label-indicator-background = ${colors.blue}
-; label-indicator-underline = ${colors.blue}
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/i3index]
 type = internal/i3
 format = <label-state>
 
-label-focused = "%name% "
-label-focused-foreground = ${colors.background}
-label-focused-background = ${colors.pink}
+label-visible = " %name% "
+label-visible-foreground = ${colors.pink}
+label-visible-background = ${colors.background}
 
-label-mode-background = ${colors.pink}
-
-
-label-unfocused =
-label-urgent =
-
-[module/i3]
-type = internal/i3
-format = <label-state><label-mode>
-
-index-sort = true
-enable-click = false
-enable-scroll = false
-
-ws-icon-0 = 0;*
-ws-icon-default = ○
-
-; Only show workspaces on the same output as the bar
-pin-workspaces = true
-
-label-mode = " %mode% "
-label-mode-foreground = ${colors.red}
-label-mode-background = ${colors.background}
-
-; focused = Active workspace on focused monitor
-label-focused = " ● "
+label-focused = " %name% "
 label-focused-foreground = ${colors.pink}
 label-focused-background = ${colors.background}
 
-; unfocused = Inactive workspace on any monitor
-label-unfocused = " %icon% "
-label-unfocused-foreground = ${colors.foreground}
+label-unfocused = " %name% "
+label-unfocused-foreground = ${colors.pink}
 label-unfocused-background = ${colors.background}
 
-; urgent = Workspace with urgency hint set
-label-urgent = " ● "
-label-urgent-foreground = ${colors.red}
-label-urgent-background = ${colors.background}
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 3
 format-prefix = " CPU "
 format-prefix-foreground = ${colors.purple}
 format-prefix-background = ${colors.background}
@@ -254,15 +180,17 @@ label = %percentage%%
 label-foreground = ${colors.purple}
 label-background = ${colors.background}
 
+
 [module/memory]
 type = internal/memory
-interval = 2
+interval = 3
 format-prefix = " RAM "
 format-prefix-foreground = ${colors.pink}
 format-prefix-background = ${colors.grey}
 label = %percentage_used%%
 label-foreground = ${colors.pink}
 label-background = ${colors.grey}
+
 
 [module/wlan]
 type = internal/network
@@ -274,7 +202,7 @@ format-connected-underline = #9f78e1
 label-connected = %essid%
 
 ;format-disconnected =
- format-disconnected = <label-disconnected>
+format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
@@ -292,6 +220,7 @@ ramp-signal-4 = 5
 ;ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
+
 [module/eth]
 type = internal/network
 interface =
@@ -303,29 +232,32 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
 ;format-disconnected =
- format-disconnected = <label-disconnected>
+format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
+
 
 [module/date]
 type = internal/date
 interval = 5
 
 date = " %Y-%m-%d"
-
 time= %H:%M
 
 label = %date% %time%
 label-foreground = ${colors.white}
 label-background = ${colors.grey}
 
+
 [module/volume]
 type = internal/volume
 
 ; mapping = true
 format-volume = <ramp-volume><label-volume>
-master-soundcard=hw:1
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
 
 label-volume = %percentage%%
 label-volume-foreground = ${colors.blue}
@@ -346,6 +278,7 @@ ramp-volume-2-background = ${colors.background}
 ramp-volume-3 = " VOL "
 ramp-volume-3-foreground = ${colors.blue}
 ramp-volume-3-background = ${colors.background}
+
 
 [module/battery]
 interval = 5
@@ -383,26 +316,6 @@ animation-charging-3 =
 animation-charging-4 = 
 animation-charging-framerate = 750
 
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature%
-label-warn = %temperature%
-label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
-
 [module/powermenu]
 type = custom/menu
 
@@ -429,6 +342,7 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
 
 [module/music]
 type = custom/script
