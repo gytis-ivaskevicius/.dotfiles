@@ -146,6 +146,8 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color
 
 
 exec_always --no-startup-id ulauncher --hide-window
+exec_always --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option altwin:swap_alt_win
 exec --no-startup-id nm-applet
 
 bindsym $mod+b exec "firefox"
