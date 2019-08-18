@@ -139,7 +139,10 @@ label-layout-background = ${colors.background}
 
 [module/i3]
 type = internal/i3
-format = <label-state>
+format = <label-mode><label-state>
+
+label-mode-foreground = ${colors.pink}
+label-mode-background = ${colors.background}
 
 label-visible = " %name% "
 label-visible-foreground = ${colors.pink}
@@ -297,7 +300,6 @@ screenchange-reload = true
 ; ############################################################
 ; Unused
 ; ############################################################
-;
 
 [module/music]
 type = custom/script
