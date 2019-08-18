@@ -279,7 +279,7 @@ menu-0-1-exec = systemctl reboot
 
 menu-0-2 = " "
 menu-0-2-foreground = ${colors.white}
-menu-0-2-exec = systemctl hibernate
+menu-0-2-exec = systemctl suspend
 
 menu-0-3 = ""
 menu-0-3-foreground = ${colors.white}
