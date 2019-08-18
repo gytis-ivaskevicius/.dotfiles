@@ -46,6 +46,7 @@ alias p="ps aux | grep "
 alias ports='netstat -tlpn'
 alias src='source ~/.bashrc'
 alias ss='sudo "$(fc -s)"'
+alias font-refresh="fc-cache -fv"
 
 #######################################################
 # NAVIGATION
