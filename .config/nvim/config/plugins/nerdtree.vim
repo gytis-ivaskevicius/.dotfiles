@@ -22,3 +22,25 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Close VIM if only NERDTree is left
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+
+let g:NERDTreeIndicatorMapCustom = {
+      \ "Modified"  : "",
+      \ "Staged"    : "",
+      \ "Untracked" : "",
+      \ "Renamed"   : "➜",
+      \ "Unmerged"  : "",
+      \ "Deleted"   : "",
+      \ "Dirty"     : "",
+      \ "Clean"     : "",
+      \ "Unknown"   : ""
+      \ }
+
+
+
+"   \ "Dirty"     : "",
+"   \ "Unknown"   : "",
+"   \ "Unmerged"  : "",
+"   \ "Clean"     : "",
+"   \ "Untracked" : "",
+
+"   \ "Modified"  : "",

@@ -6,6 +6,18 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l 
 map <C-h> <C-w>h 
 
+" Arrows in insert mode
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-l> <Right>
+inoremap <C-h> <Left>
+
+" Escape insert mode
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap jj <Esc>
+
+
 nmap <c-s> :w<cr>
 nnoremap <c-_> :nohl<cr><c-_>
 
@@ -14,4 +26,5 @@ nnoremap N Nzzzv
 nnoremap n nzzzv
 
 
-
+"noremap K ciw
+"noremap J ci"
