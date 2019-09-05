@@ -7,21 +7,20 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
+
+set scrolloff=5
 set mouse=a
 set hidden
 "set spell
 
 set visualbell
-set splitbelow
-set splitright
+set splitbelow splitright
 
 syntax on
 
-let no_buffers_menu=1
+"let no_buffers_menu=1
 let mapleader = " "
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc,*.db,*.sqlite
-
-
 
 
 " session management

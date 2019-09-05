@@ -1,5 +1,6 @@
 " Ctrl C/V to copy paste
 vmap <C-C> "+y
+nmap <C-C> "+yy
 imap <C-V> <Esc>"+pa
 
 " Navigate between splits

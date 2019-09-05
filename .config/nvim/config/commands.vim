@@ -9,3 +9,5 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 
+cnoreabbrev src source ~/.config/nvim/init.vim
+
