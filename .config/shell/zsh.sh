@@ -25,5 +25,7 @@ bindkey ";5D" backward-word
 bindkey ";5C" forward-word
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
-bindkey "\e[3~" delete-char 
+bindkey "\e[3~" delete-char
 
+SAVEHIST=5000
+HISTFILE=~/.zsh_history
