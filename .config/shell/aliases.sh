@@ -44,18 +44,23 @@ alias grub-update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mem='free -hlt'
 alias p="ps aux | grep "
 alias ports='netstat -tlpn'
-alias src='source ~/.bashrc'
 alias ss='sudo "$(fc -s)"'
 alias font-refresh="fc-cache -fv"
 
 #######################################################
 # NAVIGATION
 #######################################################
-alias ls='ls -hN --color=auto --group-directories-first'
+if command -v exa > /dev/null; then
+    alias ls='exa -h --color=auto --group-directories-first -s extension'
+    alias lstree='ls --tree'
+else
+    alias ls='ls -hN --color=auto --group-directories-first'
+fi
+
 alias l='ls -lF --time-style=long-iso'
 alias la='l -a'
 
-alias size='du -Sch | sort -n -r |more'
+alias size='du -Sch | sort -n -r | more'
 
 alias ..='cd ..'
 alias ...='cd ../../'

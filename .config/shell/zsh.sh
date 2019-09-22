@@ -1,4 +1,5 @@
 
+alias src='source ~/.zshrc'
 setopt noautomenu
 setopt nomenucomplete
 
