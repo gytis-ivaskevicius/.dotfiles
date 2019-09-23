@@ -140,7 +140,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color
 # Caps as Esc
 #exec --no-startup-id ~/comfy_guration/scripts/switch_caps_escape.sh
 # Screenshot
-#for_window [class="Shutter"] floating enable
+for_window [class="java-lang-Thread"] floating enable
 #bindsym Print exec shutter -s -e -n -o '~/pictures/screenshots/%y_%m_%d_%T.png'
 #bindsym $mod+Print exec shutter
 
