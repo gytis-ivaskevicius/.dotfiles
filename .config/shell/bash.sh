@@ -1,4 +1,6 @@
 
+alias src='source ~/.bashrc'
+
 # Terminal colors
 C1="\[\e[33m\]"
 C2="\[\e[34m\]"
