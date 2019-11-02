@@ -1,10 +1,4 @@
 #!/bin/sh
 
-# WALLPAPER
-feh --bg-scale $HOME/Pictures/wallpaper.png &
-
-# POLYBAR
-killall -9 polybar
-nohup polybar main >/dev/null 2>&1 &
-
+systemctl --user restart feh-wallpaper.service polybar.service
 

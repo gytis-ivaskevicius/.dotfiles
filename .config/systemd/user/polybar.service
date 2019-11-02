@@ -1,0 +1,14 @@
+[Unit]
+Description=Polybar
+StartLimitInterval=5
+StartLimitBurst=1
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/polybar main
+Type=oneshot
+RemainAfterExit=false
+KillMode=process
+
+[Install]
+WantedBy=default.target
