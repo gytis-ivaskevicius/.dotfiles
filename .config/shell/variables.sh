@@ -12,6 +12,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 export PATH="$PATH:$HOME/.scripts"
+export TERM="xterm-256color"
 
 if command -v java > /dev/null; then
     export JAVA_HOME_BIN=`which java`
