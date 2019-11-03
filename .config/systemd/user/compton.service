@@ -1,13 +1,11 @@
 [Unit]
-Description=Compton
-After=displays.service
-StartLimitInterval=5
-StartLimitBurst=1
+Description=Compton compositor
+PartOf=graphical-session.target
+BindsTo=xsession.service
 
 [Service]
-Environment=DISPLAY=:0
 ExecStart=/usr/bin/compton --config /home/gytis/.config/compton.conf
 KillMode=process
 
 [Install]
-WantedBy=default.target
+WantedBy=xsession.target

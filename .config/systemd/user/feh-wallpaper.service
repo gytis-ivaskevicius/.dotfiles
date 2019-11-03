@@ -1,14 +1,8 @@
 [Unit]
-Description=Feh
-StartLimitInterval=5
-StartLimitBurst=1
+Description=Sets desktop wallpaper
+PartOf=graphical-session.target
 
 [Service]
-Environment=DISPLAY=:0
 ExecStart=/bin/bash -c '/usr/bin/feh --randomize --bg-fill $HOME/Pictures/wallpaper/*'
 Type=oneshot
-RemainAfterExit=false
-KillMode=process
 
-[Install]
-WantedBy=default.target
