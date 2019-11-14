@@ -3,6 +3,6 @@ Description=Polybar system status bar
 
 [Service]
 ExecStart=/usr/bin/polybar main
-Type=oneshot
+Type=process
 KillMode=process
 
