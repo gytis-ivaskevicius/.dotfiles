@@ -6,11 +6,13 @@ compton
 dhcpcd
 discord
 dunst
+entr
 exa
 fd
 feh
 firefox
 gnome-screenshot
+highlight
 htop
 i3-gaps
 iftop
