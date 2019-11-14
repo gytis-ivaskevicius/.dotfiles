@@ -1,0 +1,10 @@
+[Unit]
+Description=Polkit dialog
+BindsTo=xsession.service
+
+[Service]
+ExecStart=/usr/lib/policykit-1-pantheon/io.elementary.pantheon-agent-polkit
+KillMode=process
+
+[Install]
+WantedBy=xsession.target

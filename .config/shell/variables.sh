@@ -13,6 +13,7 @@ export VISUAL=nvim
 
 export PATH="$PATH:$HOME/.scripts"
 export PATH="$PATH:/home/gytis/.dotnet/tools"
+export TERM="xterm-256color"
 
 if command -v java > /dev/null; then
     export JAVA_HOME_BIN=`which java`

@@ -1,14 +1,13 @@
 [Unit]
 Description=Autorandr execution hook
-StartLimitInterval=5
-StartLimitBurst=1
+PartOf=graphical-session.target
+BindsTo=xsession.service
+
 
 [Service]
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/autorandr --change --default default
 Type=oneshot
-RemainAfterExit=false
-KillMode=process
 
 [Install]
-WantedBy=default.target
+WantedBy=xsession.target
