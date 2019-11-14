@@ -12,6 +12,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 export PATH="$PATH:$HOME/.scripts"
+export PATH="$PATH:/home/gytis/.dotnet/tools"
 
 if command -v java > /dev/null; then
     export JAVA_HOME_BIN=`which java`
@@ -30,3 +31,8 @@ if [ -d "~/.nvm" ]; then
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

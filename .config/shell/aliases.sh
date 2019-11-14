@@ -46,7 +46,7 @@ alias p="ps aux | grep "
 alias ports='netstat -tlpn'
 alias ss='sudo "$(fc -s)"'
 alias font-refresh="fc-cache -fv"
-
+alias neofetch="neofetch --ascii $HOME/.config/os-ascii | lolcat"
 #######################################################
 # NAVIGATION
 #######################################################
