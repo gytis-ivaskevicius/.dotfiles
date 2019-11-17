@@ -11,7 +11,7 @@ export LESS_TERMCAP_us=$'\e[1;4;34m'
 export EDITOR=nvim
 export VISUAL=nvim
 
-export PATH="$PATH:$HOME/.scripts"
+export PATH="$PATH:$HOME/.scripts:$HOME/.local/share/npm/bin"
 export TERM="xterm-256color"
 
 if command -v java > /dev/null; then

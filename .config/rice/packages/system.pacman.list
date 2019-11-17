@@ -11,6 +11,7 @@ fd
 feh
 firefox
 gnome-screenshot
+highlight
 htop
 i3-gaps
 iftop
@@ -22,6 +23,7 @@ light-locker
 lightdm
 lshw
 man
+mlocate
 nautilus
 neofetch
 neovim
@@ -41,6 +43,7 @@ pulseaudio
 ranger
 sxhkd
 termite
+tlp
 ufw
 unzip
 vlc
