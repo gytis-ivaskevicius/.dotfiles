@@ -1,5 +1,5 @@
 [Unit]
-Description=Sets desktop wallpaper
+Description=Feh
 PartOf=graphical-session.target
 
 [Service]

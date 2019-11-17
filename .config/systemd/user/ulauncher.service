@@ -1,0 +1,10 @@
+[Unit]
+Description=uLauncher application menu
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/bin/ulauncher --hide-window
+Type=process
+
+[Install]
+WantedBy=xsession.target

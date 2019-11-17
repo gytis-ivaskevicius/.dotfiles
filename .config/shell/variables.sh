@@ -11,7 +11,7 @@ export LESS_TERMCAP_us=$'\e[1;4;34m'
 export EDITOR=nvim
 export VISUAL=nvim
 
-export PATH="$PATH:$HOME/.scripts:$HOME/.local/share/npm/bin"
+export PATH="$PATH:$HOME/.scripts:$HOME/.local/share/npm/bin:$HOME/.dotnet/tools"
 export TERM="xterm-256color"
 
 if command -v java > /dev/null; then
@@ -31,3 +31,8 @@ if [ -d "~/.nvm" ]; then
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

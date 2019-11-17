@@ -1,0 +1,10 @@
+[Unit]
+Description=NetworkMonitor applet
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/bin/nm-applet
+Type=process
+
+[Install]
+WantedBy=xsession.target
