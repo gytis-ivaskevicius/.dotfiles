@@ -3,19 +3,19 @@
 XF86Audio{RaiseVolume,LowerVolume}
     pactl set-sink-volume @DEFAULT_SINK@ {+5%,-5%}
 
-XF86AudioMute 
+XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-XF86Audio{Play,Pause,Next,Prev} 
+XF86Audio{Play,Pause,Next,Prev}
     playerctl {play,pause,next,previous}
 
 
 # Brightness
 XF86MonBrightness{Up,Down}
-    xbacklight -{inc,dec} 20 
+    xbacklight -{inc,dec} 20
 
 # Autorandr
-super + z 
+super + z
     autorandr -e -f
 
 # Applications
@@ -26,7 +26,7 @@ super + w
     termite -e ranger
 
 super + q
-    xdotool getwindowfocus windowclose
+    wmctrl -c :ACTIVE:
 
 #super + b
 #    firefox
