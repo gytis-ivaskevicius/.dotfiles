@@ -1,0 +1,8 @@
+[Unit]
+Description=Xsession dummy service
+PartOf=xsession.target
+
+
+[Service]
+ExecStart=/usr/bin/echo Xsession started
+Type=oneshot

@@ -3,8 +3,8 @@ Description=uLauncher application menu
 PartOf=graphical-session.target
 
 [Service]
-ExecStart=/bin/ulauncher --hide-window
+ExecStart=/bin/python3 /bin/ulauncher --hide-window
 Type=process
 
 [Install]
-WantedBy=xsession.target
+WantedBy=graphical-session.target

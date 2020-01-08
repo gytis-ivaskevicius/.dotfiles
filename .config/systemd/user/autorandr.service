@@ -1,7 +1,6 @@
 [Unit]
 Description=Autorandr execution hook
 PartOf=graphical-session.target
-BindsTo=xsession.service
 
 
 [Service]
@@ -10,4 +9,4 @@ ExecStart=/usr/bin/autorandr --change --default default
 Type=oneshot
 
 [Install]
-WantedBy=xsession.target
+WantedBy=graphical-session.target

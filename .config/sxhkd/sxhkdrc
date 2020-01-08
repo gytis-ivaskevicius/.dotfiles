@@ -16,7 +16,7 @@ XF86MonBrightness{Up,Down}
 
 # Autorandr
 super + z 
-    autorandr -e -f
+    autorandr -c -f
 
 # Applications
 super + Return

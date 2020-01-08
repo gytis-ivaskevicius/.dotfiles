@@ -1,4 +1,4 @@
-set number relativenumber
+set number
 set smartcase ignorecase
 
 set smartindent	smarttab

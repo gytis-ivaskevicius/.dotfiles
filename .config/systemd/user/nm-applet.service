@@ -7,4 +7,4 @@ ExecStart=/bin/nm-applet
 Type=process
 
 [Install]
-WantedBy=xsession.target
+WantedBy=graphical-session.target
