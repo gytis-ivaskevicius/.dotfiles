@@ -20,10 +20,10 @@ if command -v java > /dev/null; then
     export JAVA_HOME=`dirname $JAVA_HOME_DIR`
 fi
 
-if [ -d "~/.sdkman" ]; then
-    export SDKMAN_DIR="~/.sdkman"
-    [[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
-    source "/home/gytis/.sdkman/bin/sdkman-init.sh"
+if [ -d "$HOME/.sdkman" ]; then
+    export SDKMAN_DIR="$HOME/.sdkman"
+    [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+    source "$HOME/.sdkman/bin/sdkman-init.sh"
 fi
 
 if [ -d "~/.nvm" ]; then
