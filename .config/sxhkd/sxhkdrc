@@ -15,7 +15,7 @@ XF86MonBrightness{Up,Down}
     xbacklight -{inc,dec} 20
 
 # Autorandr
-super + z 
+super + z
     autorandr -c -f
 
 # Applications
@@ -28,8 +28,18 @@ super + w
 super + q
     wmctrl -c :ACTIVE:
 
-#super + b
-#    firefox
+super + b
+    firefox
+
+super + shift + b
+    firefox --private-window
+
+super + g
+    google-chrome-stable
+
+super + shift + g
+    google-chrome-stable --incognito
+
 
 #ctrl + shift + l
 #    i3lock-fancy-rapid 3 2

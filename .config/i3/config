@@ -113,13 +113,11 @@ bindsym $mod+Ctrl+j move workspace to output down
 bindsym $mod+Ctrl+k move workspace to output up
 bindsym $mod+Ctrl+l move workspace to output left
 
-for_window [class="java-lang-Thread"] floating enable
+for_window [title="win0"] floating enable
 
 exec_always --no-startup-id setxkbmap -option caps:escape
 exec_always --no-startup-id setxkbmap -option altwin:swap_alt_win
 
-bindsym $mod+b exec "firefox"
-bindsym $mod+g exec "google-chrome-stable"
 ## MODES ##
 
 # Gaps
