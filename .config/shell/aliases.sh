@@ -4,6 +4,8 @@ alias diff="diff --color=auto"
 alias svi='sudo nvim'
 alias vi='nvim'
 
+alias vmware-view='GTK_THEME=Adwaita vmware-view'
+
 alias config='/usr/bin/git --git-dir=$HOME/rootfs.git --work-tree=/'
 config config --local status.showUntrackedFiles no
 
@@ -47,6 +49,10 @@ alias ports='netstat -tlpn'
 alias ss='sudo "$(fc -s)"'
 alias font-refresh="fc-cache -fv"
 alias neofetch="neofetch --ascii $HOME/.config/os-ascii | lolcat"
+alias "c=xclip"
+alias "v=xclip -o"
+
+
 #######################################################
 # NAVIGATION
 #######################################################

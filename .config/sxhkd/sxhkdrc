@@ -15,8 +15,8 @@ XF86MonBrightness{Up,Down}
     xbacklight -{inc,dec} 20
 
 # Autorandr
-super + z
-    autorandr -e -f
+super + z 
+    autorandr -c -f
 
 # Applications
 super + Return

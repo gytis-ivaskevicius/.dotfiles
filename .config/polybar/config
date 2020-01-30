@@ -153,6 +153,10 @@ label-focused-font = 3
 label-focused-foreground = ${colors.pink}
 label-focused-background = ${colors.background}
 
+label-urgent = " %name% "
+label-urgent-background = ${colors.background}
+label-urgent-foreground = ${colors.white}
+
 label-unfocused = " %name% "
 label-unfocused-foreground = ${colors.pink}
 label-unfocused-background = ${colors.background}
