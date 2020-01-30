@@ -1,10 +1,10 @@
 ack
-cups
-cups-pdf
 android-tools
 arandr
 autorandr
 compton
+cups
+cups-pdf
 dhcpcd
 discord
 dunst
@@ -13,7 +13,7 @@ exa
 fd
 feh
 firefox
-gnome-screenshot
+flameshot
 highlight
 htop
 i3-gaps
