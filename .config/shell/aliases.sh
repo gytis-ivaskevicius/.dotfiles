@@ -57,7 +57,7 @@ alias "v=xclip -o"
 # NAVIGATION
 #######################################################
 if command -v exa > /dev/null; then
-    alias ls='exa -h --color=auto --group-directories-first -s extension'
+    alias ls='exa -h --git --color=auto --group-directories-first -s extension'
     alias lstree='ls --tree'
 else
     alias ls='ls -hN --color=auto --group-directories-first'
